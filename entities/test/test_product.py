@@ -7,6 +7,8 @@ class TestProduct(unittest.TestCase):
         self.name = "iPone"
         self.price = 500.00
 
+        self.smartphone = Product(self.name, self.price)
+
 
     def test_product_object(self):
         name = "Apple"

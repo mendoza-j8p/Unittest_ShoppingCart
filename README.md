@@ -30,19 +30,25 @@ A traves de las rutas podemos ser muy especificos sobre las pruebas o prueba que
 Basta con colocar el directorio, la ruta o rutas donde se encuenta la(s) prueba(s) utilizando punto.
 De esta manera:
 
-Para ejecutar los todos los modulos desde la terminal:
+**Para ejecutar todas las pruebas dento de la ruta donde se encuentra la termina (>>> pwd):**
+
+```bash
+python -m unittest discover
+```
+
+**Para ejecutar los todos los modulos de un archivo:**
 
 ```bash
 python -m unittest -v entities.test.test_shopping_cart
 ```
 
-Para ejecutar un modulo concreto desde la terminal
+**Para ejecutar un modulo concreto de un archivo concreto:**
 
 ```bash
 python -m unittest -v entities.test.test_shopping_cart.TestShoppingCart
 ```
 
-Para ejecutar explicitamente que prueba de que clase podemos ejecutar
+**Para ejecutar explicitamente una prueba de una clase podemos ejecutar:**
 
 ```bash
 python -m unittest -v entities.test.test_shopping_cart.TestShoppingCart.test_discount_error
